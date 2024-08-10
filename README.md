@@ -162,10 +162,29 @@
 
 
 ## 10-Aug-2024
-Mocking the tests - TDD 
-7 types of security testing 
-Myths and facts about security Testing 
-Performing Code reviews - Git
+- Mocking the tests - TDD 
+- 7 types of security testing 
+    - Vulnerability Scanning  
+        ```
+            lang=en
+        ```
+    - Pen Testing (Penetration)
+    ```
+        public boolean insertEmployee(int empId, String name) {
+            String sql ="insert into employee values(?,?)"; 
+
+            GetConnection gc = getMysqlConnection(); 
+            PreparedStatement = gc.preparedStatement(sql); 
+            ... 
+        }
+    ```
+    - Security Audits 
+    - Risk Assessment 
+    - Ethical Hacking 
+    - Security Assessment 
+    - Red Teaming 
+- Myths and facts about security Testing 
+- Performing Code reviews - Git
 
 
 
