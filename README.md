@@ -194,11 +194,56 @@ Performing Code reviews - Git
     - Hyd 
         class Remote{
             public void on(Device d){
-                d.on();
+                d.on()
             }
         }
 
 ```
+
+
+
+
+### ways of working with java 
+1. You create an object 
+    ```
+        EmployeeDAOMySQL dao = new EmployeeDAOMySQL(); - but this code is tighly coupled to particular class 
+        EmployeeDAOOracle dao1 = new EmployeeDAOoracle(); 
+    ```
+
+2. better way 
+
+```
+    IEmployeeDAO dao = new EmployeeDAOMySQL(); 
+    dao = new EmployeeDAOoracle(); 
+```
+3. mock way 
+
+```
+    IEmployeeDAO dao = mock(IEmployeeDAO.class); -> behind the screen mockito creates an object of interface and keep it handy 
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  ## Resources 
 

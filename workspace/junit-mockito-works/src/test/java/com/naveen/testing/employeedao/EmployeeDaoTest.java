@@ -4,13 +4,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import com.naveen.contracts.IEmployeeDAO;
 import com.naveen.dao.EmployeeDAOMySQL;
 
 class EmployeeDaoTest {
 
 	@Test
 	void employeeInsertRecordText_pass() {
-		EmployeeDAOMySQL dao = new EmployeeDAOMySQL(); 
+		IEmployeeDAO dao = new EmployeeDAOMySQL(); 
 		
 		boolean flag = dao.insertEmployee(101, "Harish Kumar");
 		
