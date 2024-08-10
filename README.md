@@ -104,6 +104,9 @@
         return num1 + num2; 
     }
 
+    T add (T1 num1, T2 numb2) {
+        return num1 + num2; 
+    }
     int add(double num1, double num2) {
         return num1 + num2; 
     }
@@ -151,18 +154,51 @@
     - A/B Testing 
     - Databases Testing 
  
-
 ### What the heck is this 
 - Error - which produces incorrect output / result - happens by human 
 - Bug - its an error which be identified only upon execution 
 - Fault - state of error 
 - Failure - the software is not performaing as expected, at the particular time 
 
-"Mocking the tests - TDD 
+
+## 10-Aug-2024
+Mocking the tests - TDD 
 7 types of security testing 
 Myths and facts about security Testing 
-Performing Code reviews"
+Performing Code reviews - Git
 
+
+
+```
+    - standards 
+
+    public interface Device {
+        public void on();
+        public void off();
+    }
+    - blr 
+        class AC implements Device{
+            public void on() {..}
+            public void off() {..}
+        }
+    - chn 
+        class Projector implements Device {
+            public void on() {..}
+            public void off() {..}
+        }
+    - del 
+        class Monitor implements Device{
+            public void on() {..}
+            public void off() {..}
+        }
+    - Hyd 
+        class Remote{
+            public void on(Device d){
+                d.on();
+            }
+        }
+
+```
 
  ## Resources 
 
