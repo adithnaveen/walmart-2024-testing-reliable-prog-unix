@@ -245,12 +245,47 @@
 
 
 
+# 23-aug-2024 
+## Session 1 
+
+- Why UNIX?
+- Variants of Unix Operating System
+- Unix Operating System Concepts 
+- (Multiuser, Multitasking ,Multiprocessing)
+- The UNIX Operating System  Architecture 
+- (H/W , Kernel , Shell  and Other Applications)
+- Unix Directories Structure (bin, usr, etc, home, dev, var, tmp)
+- Files and inodes (detailed specification of inode table)
+- Logging in (Terminal Type, Passwords, Exiting, Identity)
+- Unix Command Line Structure
+- Control Keys
+- Getting help
+- Directory Navigation and Control 
+- (pwd,cd, mkdir, rmdir, ls)
+- File Maintenance Commands (cp, mv, rm)
+- File Permissions with options, chmod, chown, chgrp, ls)
+- Understanding based on Permissions
+- Display Commands 
+- (echo, cat, more, less, and pg - page through a file, head, tail)
+- Working With Files (cmp, diff, cut, paste - merge files, touch - create a file ,wc, Softlink and - harlinks using ln- link to another file , sort, tee, uniq, strings, file – file type, tr)
 
 
 
 
 
-
+## Session 2 
+Different Types of shells
+Customizing the shell environment (.profile,rc file)
+Environmental Variables
+Escaping and Quoting
+Variables (system and user defined variables)
+Control Statement (test specifications need to be additionally discussed)
+Looping
+Functions
+Here Document (<<)
+Parsing Files with read operations
+Overview to connect to sqlplus and run simple queries
+Calling C++ applications and Java specifications via Unix
 
 
 
