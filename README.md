@@ -266,12 +266,51 @@
 - Directory Navigation and Control 
 - (pwd,cd, mkdir, rmdir, ls)
 - File Maintenance Commands (cp, mv, rm)
-- File Permissions with options, chmod, chown, chgrp, ls)
+- File Permissions with options, chmod, chown, chgrp, ls
 - Understanding based on Permissions
 - Display Commands 
 - (echo, cat, more, less, and pg - page through a file, head, tail)
 - Working With Files (cmp, diff, cut, paste - merge files, touch - create a file ,wc, Softlink and - harlinks using ln- link to another file , sort, tee, uniq, strings, file – file type, tr)
 
+
+- you need to have linux box or git bash
+## Features of Unix 
+    - Memory Managament - Chache Memory, Primary Memory, Secondary Memory 
+    - Multi Tasking 
+    - Multi User 
+    - Time Sharing System 
+    - File Management 
+    - Input / Output connectin devices 
+    - Security 
+    - Communication & Networking 
+    - Unix building utilities & softwares 
+        - CLI OS 
+        - Linux 
+        - MAC
+        - sun solaris... 
+
+## Programming practice 
+- Multi Threads - are controllect in a program 
+- quantum time - will exeucted in RR, Priority First Scheduling  
+- System call - an instruction sent to kernel, routine stored in kernel 
+    - File maniuplation 
+    - process control 
+    - information retrieval 
+    - smallest work which happens in the system 
+    - read 
+
+
+
+```
+- rw- r-- r--   (- represents its ordinary file )
+d rwx r-x r-x   (d represents its a direcroty file)
+
+
+rw- - User 
+r-- - group 
+r-- - others 
+
+```
 
 
 
