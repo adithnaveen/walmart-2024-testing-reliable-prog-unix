@@ -313,39 +313,78 @@ r-- - others
 ```
 
 
+- wild card characters 
+- Different types of shell - sh, bash, ksh, csh 
+
 
 
 ## Session 2 
-Different Types of shells
-Customizing the shell environment (.profile,rc file)
-Environmental Variables
-Escaping and Quoting
-Variables (system and user defined variables)
-Control Statement (test specifications need to be additionally discussed)
-Looping
-Functions
-Here Document (<<)
-Parsing Files with read operations
-Overview to connect to sqlplus and run simple queries
-Calling C++ applications and Java specifications via Unix
+- Different Types of shells
+- Customizing the shell environment (.profile,rc file)
+- Environmental Variables
+- Escaping and Quoting
+- Variables (system and user defined variables)
+- Control Statement (test specifications need to be additionally discussed)
+- Looping
+- Functions
+- Here Document (<<)
+- Parsing Files with read operations
+- Overview to connect to sqlplus and run simple queries
+- Calling C++ applications and Java specifications via Unix
 
 
 
 
 
+- working with variables - exporting 
+
+```
+    > mvn - the system defaultly checkeks if the file exists in the current folder 
+    > mvn - it will check if there is variable set 
+    > mvn - set this variable at the .bash_profile or to your shell specific 
+```
+
+- IO Redirection 
+```
+    - < for input redirection (any input from keyboard shall be given here )
+    - > output redirection (by default is on console but can be put on file)
+    - >> apprending redirection (appends the content to the file)
+```
+
+
+- chmod 
+```
+    - octa series (0-7)
+    - owner - Read(4) Write(2) Execute(1)
+    - group - Read Write Execute 
+    - other - Read Write Execute 
+
+
+    - rw- r-- r--  1 naveenkumar  admin   31 Aug 23 12:50 hello.txt
+
+
+    - u, g, o 
+    - + or - 
+    - r, x, w 
+
+    - defult - 644 
+```
 
 
 
+- if else - else if 
+
+- accept user state if the user is from karnataka then welcome to karnataka - some text 
+- accept user state if the user is from Maharastra then welcome to maharastra - some text 
+- else you are from other state 
 
 
 
+- excersice - accept 2 file names from the application, the first name (file name) should be there in the path specified, if found then copy the file to second file name 
 
 
-
-
-
-
-
+> hello.txt  (-f -a number of chars more than 0 -s) true copy the file in  
+> sample.txt 
 
 
 
