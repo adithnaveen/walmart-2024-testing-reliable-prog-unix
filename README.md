@@ -386,6 +386,33 @@ r-- - others
 > hello.txt  (-f -a number of chars more than 0 -s) true copy the file in  
 > sample.txt 
 
+# 30-aug-2024 
+
+- What is a Version Control System (VCS)?
+- Distributed vs Non-distributed VCS
+- What is Git and where did it come from?
+- Git commands (Clone, Working Tree, Checkout, Staging area, Add, Commit, Push, Pull)
+- Creating a repository (git init)
+- Checking status (git status)
+- Adding files to a repository (git add)
+- Committing files (git commit)
+- Removing staged files (git reset)
+- Push repository to github performing PR
+- Branching Strategy + Mono Repo 
+
+
+## in the class 
+- its the repo to store your code 
+- gives capabilities to create branches 
+- VCS 
+- you can maintain the local copy 
+- access from anywhere 
+- helps collaborate 
+- tracking the development progress 
+
+
+
+
 
 
 
