@@ -1,0 +1,35 @@
+GET http://localhost:9200/_cat/indices HTTP/1.1
+
+
+###
+
+
+PUT http://localhost:9200/employees?pretty HTTP/1.1
+
+###
+# to show the details of employees index 
+GET http://localhost:9200/employees/_search HTTP/1.1
+
+
+###
+# to show the data of employees index 
+GET http://localhost:9200/employees/_search/?pretty&q=*:* HTTP/1.1
+
+
+### 
+
+PUT http://localhost:9200/employees1?pretty HTTP/1.1
+Content-Type: application/json
+
+{
+    "mappings" :{
+        "properties" :{
+            "id": {"type":"integer"}, 
+            "name": {"type":"text"}, 
+            "salary": {"type":"double"}, 
+            "city": {"type":"text"}, 
+            "state": {"type":"text"}, 
+            "desig": {"type":"text"}
+        }
+    }
+}

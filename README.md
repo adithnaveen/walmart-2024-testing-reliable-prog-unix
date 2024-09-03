@@ -483,6 +483,25 @@ volumes:
 
 ```
 
+> docker ps 
+
+> docker images 
+
+
+> docker-compose up -d  -- to start the service in deamon 
+
+> docker-compose down -- to shut down 
+
+
+
+- to list the indices in verbose mode - GET 
+> http://localhost:9200/_cat/indices?v
+
+> http://localhost:9200/_cat/indices?h=uuid,docs.count
+
+
+
+
  ## Resources 
 
 - https://www.w3.org/WAI/WCAG2AAA-Conformance
