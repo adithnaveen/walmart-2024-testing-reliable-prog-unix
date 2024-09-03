@@ -499,9 +499,9 @@ volumes:
 
 > http://localhost:9200/_cat/indices?h=uuid,docs.count
 
-
-
-
+```
+ <iframe src="http://localhost:5601/goto/6bbff7b985a4cb30f369943c667a1b5e" height="600" width="800"></iframe>
+```
  ## Resources 
 
 - https://www.w3.org/WAI/WCAG2AAA-Conformance
