@@ -411,13 +411,84 @@ r-- - others
 - tracking the development progress 
 
 
+ssh-keygen -t ed25519 -C "adith.naveen@gmail.com"
 
 
+```
+    > git clone https://github.com/adithnaveen/Walmart-git-training-delete.git - this command shall give all the code + branches associated 
+
+    > 
+```
 
 
+# 03-sep-2024 
 
+## ELK 
+
+- prometheus + Grafana 
+- grafana vs kibana 
+- newrelic 
+
+- telemetrics 
+    - system 
+        - i've 3 instances of login service 
+        - i've 4 instances of accounts service 
+        - ..... 
+    - system break down /slow/ reaching saturation /... 
+    - business 
+
+- Elastic
+- Kibana
+- Logstash 
+
+## setup elk with docker compose 
+
+```
+    version: '3'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.15.0
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - xpack.security.enabled=false
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.15.0
+    ports:
+      - "5601:5601"
+    environment:
+      ELASTICSEARCH_HOSTS: "http://elasticsearch:9200"
+    depends_on:
+      - elasticsearch
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.15.0
+    volumes:
+      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+    depends_on:
+      - elasticsearch
+
+volumes:
+  esdata:
+    driver: local
+
+```
 
  ## Resources 
 
 - https://www.w3.org/WAI/WCAG2AAA-Conformance
 - https://gdpr-info.eu/art-23-gdpr/
+- https://github.com/settings/tokens
+
+
+
+
