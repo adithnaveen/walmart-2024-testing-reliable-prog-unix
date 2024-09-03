@@ -444,7 +444,7 @@ ssh-keygen -t ed25519 -C "adith.naveen@gmail.com"
 ## setup elk with docker compose 
 
 ```
-    version: '3'
+version: '3'
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.15.0
