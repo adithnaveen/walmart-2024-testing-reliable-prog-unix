@@ -502,6 +502,45 @@ volumes:
 ```
  <iframe src="http://localhost:5601/goto/6bbff7b985a4cb30f369943c667a1b5e" height="600" width="800"></iframe>
 ```
+- can give it to front end application 
+
+
+
+# 13-sep-2024 
+JavaScript Day 1
+
+- Basics of Javascript
+- JavaScript Introduction
+- Building blocks of Javascript
+- JavaScript Objects	
+- Javascript Object oriented programming
+- Creating objects in Javascript
+- Defining method in Javascript object 
+
+
+## front end team 
+- builds front end application 
+- RIA 
+- pls ensure to have the contract with the backend team - data model 
+
+
+
+
+```
+    {
+        var xx;  - should i use this + at what level 
+    }
+    {
+        let x; 
+    }
+
+```
+
+
+### Differenciate React v/s MERN 
+- react is the front end library 
+
+
  ## Resources 
 
 - https://www.w3.org/WAI/WCAG2AAA-Conformance
