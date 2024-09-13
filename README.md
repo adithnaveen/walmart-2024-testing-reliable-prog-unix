@@ -540,6 +540,25 @@ JavaScript Day 1
 ### Differenciate React v/s MERN 
 - react is the front end library 
 
+- UML 
+    - use Case 
+    - sequence 
+    - flowchart 
+
+- screens 
+- swagger document 
+
+```
+{
+    username:"Naveen", 
+    email:"naveen@naveen.com", 
+    dob:"1-1-1990"
+}
+```
+
+
+
+
 
  ## Resources 
 
