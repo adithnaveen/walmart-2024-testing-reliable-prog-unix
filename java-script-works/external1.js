@@ -39,4 +39,24 @@ function fnDataType() {
 
 }
 
-fnDataType();
+gOuterInteger = 200;
+function fnDataTypeScope() {
+    gInteger = 100; // this variable will be considered as global variable from this line onwards 
+    {
+        var myVar1 = 300; // since we have said this is var then scope will be local to the function 
+        let myLetVar1 = 400;
+    }
+    console.log("in fnDataTypeScope() gOuterInteger-> " + gOuterInteger);
+    console.log("in fnDataTypeScope()  gInteger-> " + gInteger);
+    console.log("in fnDataTypeScope() myVar1-> " + myVar1);
+    console.log("in fnDataTypeScope() myLetVar1 -> " + myLetVar1);
+}
+
+function fnCheckScope() {
+    console.log("in fnCheckScope() gOuterInteger-> " + gOuterInteger);
+    console.log("in fnCheckScope()  gInteger-> " + gInteger);
+    // console.log("in fnCheckScope() myVar1-> " + myVar1); // this will give an error 
+}
+fnDataTypeScope();
+fnCheckScope();
+// fnDataType();
