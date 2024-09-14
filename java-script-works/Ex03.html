@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+    <script>
+        console.log(document.firstChild);
+    </script>
+</head>
+
+<body bgcolor="cyan">
+    <p>This is para</p>
+
+    <script>
+        let para1 = document.getElementsByTagName('p')[0];
+        console.log(para1);
+        console.log("Node value " + para1.firstChild.nodeValue);
+        console.log("Node Name " + para1.firstChild.nodeName);
+
+
+        let _bgColor = document.body.attributes.bgcolor.nodeValue;
+        let _bgColor1 = document.body.getAttribute("bgcolor");
+
+        console.log(_bgColor);
+        console.log(_bgColor1);
+
+    </script>
+
+</body>
+
+</html>

@@ -601,6 +601,10 @@ JavaScript Day 1
 
 ```
 
+## associative arrays 
+- in javascript the values to the functions are passed as associative arrays 
+- so there is no concept of function overloading 
+
 
  ## Resources 
 

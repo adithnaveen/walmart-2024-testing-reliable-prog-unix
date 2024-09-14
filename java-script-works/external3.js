@@ -41,4 +41,13 @@ function fnArray2() {
     arr2.splice(1, 1, "MONDAY");
     console.log(arr2);
 }
-fnArray2();
+// fnArray2();
+
+// working with associative arrays in java with functions 
+
+function fnAssociativeArray() {
+    console.log(fnAssociativeArray.arguments);
+}
+
+fnAssociativeArray(1, 2, 3, 4, 5, "Hello");
+fnAssociativeArray(1, 2, "Hello");
