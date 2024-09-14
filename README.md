@@ -557,6 +557,11 @@ JavaScript Day 1
 ```
 
 
+# 14-sept-2024 
+
+- Writing simple javascript program 
+- writing javascript .js file and invoking in html 
+- you can have .js, .css files seperated from .html 
 
 
 
