@@ -563,6 +563,43 @@ JavaScript Day 1
 - writing javascript .js file and invoking in html 
 - you can have .js, .css files seperated from .html 
 
+### good to use scope of variable 
+    - const 
+    - let 
+    - var 
+    - global variable 
+
+
+###  in java script there is no class, function itself is treated as class 
+
+- prototype equivalent in java 
+
+
+```
+    class Person {
+        int age; 
+        String firstName; 
+        String lastName; 
+
+    public void display () {
+        System.out.println("Age is " + age); 
+        System.out.println("FirstName is " + firstName); 
+        System.out.println("lastName is " + lastName); 
+    }
+
+    }
+```
+
+- splice 
+
+```
+    splice(indexPosition, noOfElementsToBeDeleted, [rest of elements to be added]);
+    Ex: 
+    splice(1,2,3);  - goto index 1, delete 2 values, add value 3 
+    splice(3,0,2,3,4,5,6,7); go to index 3 dont delete any value then add rest of it 
+    splice (2,1); goto index 2 and delete 1 value 
+
+```
 
 
  ## Resources 
