@@ -6,6 +6,10 @@
 
     <script>
         console.log(document.firstChild);
+
+        function fnChangeColor(color) {
+            document.body.setAttribute("bgcolor", color);
+        }
     </script>
 </head>
 
@@ -18,7 +22,6 @@
         console.log("Node value " + para1.firstChild.nodeValue);
         console.log("Node Name " + para1.firstChild.nodeName);
 
-
         let _bgColor = document.body.attributes.bgcolor.nodeValue;
         let _bgColor1 = document.body.getAttribute("bgcolor");
 
@@ -26,6 +29,13 @@
         console.log(_bgColor1);
 
     </script>
+
+
+    <button type="button" onmouseover="fnChangeColor('red')">Red</button>
+    <button type="button" onmouseover="fnChangeColor('blue')">Blue</button>
+    <button type="button" onmouseover="fnChangeColor('green')">Green</button>
+    <button type="button" onmouseover="fnChangeColor('cyan')">Cyan</button>
+    <button type="button" onmouseover="fnChangeColor('yellow')">Yellow</button>
 
 </body>
 
