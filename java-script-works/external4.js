@@ -15,6 +15,22 @@ function fnFetchedValue() {
     if (myMates.length === 0) {
         document.getElementById("mydiv").innerHTML = "No Records"
     } else {
-        document.getElementById("mydiv").innerHTML = myMates[0].firstName + " | " + myMates[0].lastName;
+        const mateListDiv = document.getElementById('mydiv');
+
+        // Iterate through each mate
+        myMates.forEach(function (mate) {
+            // Create a new div element
+            const myDiv = document.createElement('div');
+            myDiv.classList.add("mate-class");
+
+            // Set the inner HTML of the div with the mate's name
+            myDiv.innerHTML = `<strong>First Name:</strong> ${mate.firstName} <br> <strong>Last Name:</strong> ${mate.lastName}`;
+
+            // Add some margin for spacing
+            myDiv.style.marginBottom = '5px';
+
+            // Append the new div to the main div
+            mateListDiv.appendChild(myDiv);
+        });
     }
 }
