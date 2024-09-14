@@ -10,6 +10,10 @@
         function fnChangeColor(color) {
             document.body.setAttribute("bgcolor", color);
         }
+
+        function fnChangeImage(image) {
+            document.getElementById("myimage").src = "./images/" + image;
+        }
     </script>
 </head>
 
@@ -40,17 +44,23 @@
 
     <hr>
 
-    <img src="./images/mickey.jpg" alt="micket" id="myimage" srcset="" width="200" height="200">
+    <img src="./images/mickey.jpg" alt="mickey" id="myimage" width="250" height="250">
 
     <hr>
 
     <table border="1">
         <tr>
-            <td><img src="./images/mickey.jpg" alt="micket" srcset="" width="150" height="150"></td>
-            <td><img src="./images/minnie.png" alt="micket" srcset="" width="150" height="150"></td>
-            <td><img src="./images/cheetah.jpeg" alt="micket" srcset="" width="150" height="150"></td>
-            <td><img src="./images/lion.jpg" alt="micket" srcset="" width="150" height="150"></td>
-            <td><img src="./images/tiger.jpeg" alt="micket" srcset="" width="150" height="150"></td>
+            <td><img src="./images/mickey.jpg" alt="micket" onmouseover="fnChangeImage('mickey.jpg')" width="150"
+                    height="150"></td>
+            <td><img src="./images/minnie.png" alt="micket" onmouseover="fnChangeImage('minnie.png')" width="150"
+                    height="150"></td>
+            <td><img src="./images/cheetah.jpeg" alt="micket" onmouseover="fnChangeImage('cheetah.jpeg')" width="150"
+                    height="150"></td>
+            <td><img src="./images/lion.jpg" alt="micket" onmouseover="fnChangeImage('lion.jpg')" width="150"
+                    height="150">
+            </td>
+            <td><img src="./images/tiger.jpeg" alt="micket" onmouseover="fnChangeImage('tiger.jpeg')" width="150"
+                    height="150"></td>
         </tr>
     </table>
 
