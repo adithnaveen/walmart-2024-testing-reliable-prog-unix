@@ -606,12 +606,25 @@ JavaScript Day 1
 - so there is no concept of function overloading 
 
 
+# 18-sep-2024 
+
+
+## AOT v/s JIT 
+- AOT will compile the code at build time - time is the concern, we need less time to execute the code. 
+- JIT will compile the code at run time
+- we live in the world of polyglot - my programming language is java, python, javascript, c++, go etc.. 
+- c++ vs java - the faster is always c++, is c++ executes in native system 
+
+
+
+
+
  ## Resources 
 
 - https://www.w3.org/WAI/WCAG2AAA-Conformance
 - https://gdpr-info.eu/art-23-gdpr/
 - https://github.com/settings/tokens
-
+- https://www.graalvm.org/latest/getting-started/ - graal vm tutorial getting started
 
 
 
