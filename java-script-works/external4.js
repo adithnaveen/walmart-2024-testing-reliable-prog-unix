@@ -78,7 +78,17 @@ function fnRegExp1() {
 
 
 function fnValidateEmail() {
+
     let email = "atul@walmart.com";
 
+    let validatedEmail = email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+
+    console.log(validatedEmail);
+
+    if (email == validatedEmail) {
+        console.log("Valid Email");
+    } else {
+        console.log("Invalid Email");
+    }
 
 }

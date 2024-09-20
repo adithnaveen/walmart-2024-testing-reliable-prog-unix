@@ -656,6 +656,25 @@ JavaScript Day 3
 - Email Validations"
 
 
+```
+
+    ( /     [^\s@]+   @     [^\s@]+\.[^\s@]+     /    );
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
  ## Resources 
 
 - https://www.w3.org/WAI/WCAG2AAA-Conformance
