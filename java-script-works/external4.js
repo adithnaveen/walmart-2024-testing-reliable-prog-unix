@@ -2,6 +2,7 @@
 
 function fnFetchedValue() {
 
+    // assume that the data will from the cloud we shall use fetch or axios 
     let myMates = [
         { firstName: "Atul", lastName: "Kumar" },
         { firstName: "Diwya", lastName: "Sinha" },
@@ -33,4 +34,21 @@ function fnFetchedValue() {
             mateListDiv.appendChild(myDiv);
         });
     }
+}
+
+
+
+
+function fnPreDefinedFunction() {
+    let myName = "Atul Kumar";
+    console.log("Lenght of the Name ", myName.length);
+    console.log("Uppercase of the Name ", myName.toUpperCase());
+    console.log("Lowercase of the Name ", myName.toLowerCase());
+    console.log("Index position of the char n ", myName.indexOf("n"));
+    console.log("Substring position from (0,3)  ", myName.substring(0, 3));
+    console.log("substr of (5,2) ", myName.substr(5, 2));
+    console.log("Char @ 2 ", myName.charAt(2));
+
+
+    console.log("Get ascii equivalents of A ", myName.charAt(0).charCodeAt());
 }
