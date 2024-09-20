@@ -39,6 +39,8 @@ function fnFetchedValue() {
 
 
 
+
+// sample comment 
 function fnPreDefinedFunction() {
     let myName = "Atul Kumar";
     console.log("Lenght of the Name ", myName.length);
