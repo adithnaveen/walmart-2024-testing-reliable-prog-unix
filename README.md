@@ -661,7 +661,19 @@ JavaScript Day 3
     ( /     [^\s@]+   @     [^\s@]+\.[^\s@]+     /    );
 
 
+http://127.0.0.1:5500/java-script-works/registration/Registration.html?
 
+userName=kumarnaveen&
+usrPwd=kumar%401234&
+cpwd=kumar%401234&
+sex=m&
+qual=bsc&
+addrs=teseolkjsdflkjsldkfjlksjdf+ljsld+fjlkjsdfsdf&
+country=india&
+cb1=sports&
+cb2=politics&
+terms=A&
+regbtn=Register
 
 ```
 

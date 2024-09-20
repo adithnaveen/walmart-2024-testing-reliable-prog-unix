@@ -1,4 +1,4 @@
-// to show working of div with id 
+// to show working of div with id
 
 function fnFetchedValue() {
 
