@@ -53,4 +53,32 @@ function fnPreDefinedFunction() {
 
 
     console.log("Get ascii equivalents of A ", myName.charAt(0).charCodeAt());
+
+    console.log("replace function tul with mit ", myName.replace("tul", "mit"));
+
+    console.log("Split function ", "India:China:Nepal:Bhutan".split(":"));
+
+}
+
+function fnRegExp1() {
+    let vRegExp = /ll/;
+    let myString = "Hello";
+
+    console.log(myString.match(vRegExp));
+
+    let myOctals = "023432";
+    console.log(myOctals.match(/0[0-7]/)); // match exactly 1 character
+    console.log(myOctals.match(/0[0-7]+/)); // match 1 or more 
+
+    // validate the ip address with regular expressions
+    console.log("192.168.1.123".match(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/));
+
+}
+
+
+
+function fnValidateEmail() {
+    let email = "atul@walmart.com";
+
+
 }
