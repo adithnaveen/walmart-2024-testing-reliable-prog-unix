@@ -559,6 +559,22 @@ JavaScript Day 1
 
 # 14-sept-2024 
 
+
+## JavaScript Day 2	
+
+- Nested Object-Aggregation
+- Prototypal Inheritance, Constructor Pattern
+- Polymorphism in Javascript
+- Javascript Functions, Output, Array, Strings, Date
+- Javascript Number & Math Objects Scope
+- Scope and the Javascript Compiler
+- Compiling Function Scope, Execution of Function Code
+- Function Declarations, Function Expressions
+- Block Scope, Dynamic Scope
+
+
+
+
 - Writing simple javascript program 
 - writing javascript .js file and invoking in html 
 - you can have .js, .css files seperated from .html 
@@ -615,8 +631,29 @@ JavaScript Day 1
 - we live in the world of polyglot - my programming language is java, python, javascript, c++, go etc.. 
 - c++ vs java - the faster is always c++, is c++ executes in native system 
 
+```
+-- million iterations code with JIT 
+Total Tim For iteration is :374404775
+java com.naveen.StressTest  0.50s user 0.17s system 111% cpu 0.596 total
 
 
+-- million iterations code with AOT - Graal 
+Total Tim For iteration is :54
+./com.naveen.stresstest  0.00s user 0.00s system 71% cpu 0.012 total 
+```
+
+# 20-sep-2024 
+
+
+JavaScript Day 3
+
+- Closures
+- Browser Object Model
+- Window Object
+- History Object
+- Javascript Form Validations
+- Form Validations
+- Email Validations"
 
 
  ## Resources 
