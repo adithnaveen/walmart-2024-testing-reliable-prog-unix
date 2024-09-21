@@ -678,8 +678,18 @@ regbtn=Register
 ```
 
 
+# 21-sep-2024 
 
+## working with es6 
+```
+[Arguments] 
 
+{ 
+    '0': [ '', ' is ', ' old' ],  - string 
+    '1': 'Diwya', - first template substition 
+    '2': 30 - second template substition 
+}
+```
 
 
 
