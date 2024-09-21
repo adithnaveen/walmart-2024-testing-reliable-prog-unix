@@ -693,6 +693,6 @@ regbtn=Register
 - https://gdpr-info.eu/art-23-gdpr/
 - https://github.com/settings/tokens
 - https://www.graalvm.org/latest/getting-started/ - graal vm tutorial getting started
-
+- https://compat-table.github.io/compat-table/es6/ 
 
 
