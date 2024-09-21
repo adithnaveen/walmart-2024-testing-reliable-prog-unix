@@ -18,3 +18,14 @@ console.log(numbers2);
 numbers.push(888);
 console.log(numbers2);
 console.log(numbers === numbers2);
+
+
+////////////////// 
+
+let { firstName, lastName, email } = person;
+console.log("First Name ", firstName);
+console.log("Last name ", lastName);
+console.log("company email ", email);
+
+
+
