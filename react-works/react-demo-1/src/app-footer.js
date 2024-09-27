@@ -6,7 +6,9 @@ function AppFooter(props) {
     return (
         <div className="app-footer">
             <hr />
-            <p>Copy Right reserved - Walmart - {props.year} </p>
+            <p>Copy Right reserved - Walmart - {props.year}
+                company: {props.company} -
+                <a href={props.website}>website</a> </p>
         </div>
     )
 }
