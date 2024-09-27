@@ -693,9 +693,99 @@ regbtn=Register
 
 
 
+## introduction to reactjs 
+
+```
+- frament 2 
+        <fragment2> 
+            <div></div>
+        </fragment2>
+
+- fragment 1
+    <>
+        <fragment2/> 
+        <div></div>
+        <div></div>
+    </>
 
 
+// stateful component 
+class HelloWorld extends Component {
+     render() {
+        return <></>
+    }
+}
 
+
+// stateless component 
+const HelloWorld = () => {
+    return null; 
+}; 
+
+
+<App>
+    <div>
+        <Header title="This is my React Application"/>
+    </div>
+</App>
+
+
+class Header extends React.Component {
+    render() {
+        return 
+        <div>
+            <h1>{this.props.title}</h1>
+            <hr />
+            <h2>This another tag</h2>
+        </div>
+    }
+}
+
+const Header = (props) => {
+    return <div>
+     <h1>{title}</h1>
+    </div>
+}
+```
+
+```
+> npm i -g react react-dom --save
+
+-- to check the list of packages installed 
+> npm list 
+
+-- to create react application 
+> npx create-react-app react-demo-1
+
+-- to start reactjs application 
+> npm start 
+```
+
+### once after react application is generated 
+
+```
+Success! Created react-demo-1 at /Volumes/Kanchan/MyTrainings/walmart/walmart-2024-testing-reliable-prog-unix/react-works/react-demo-1
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd react-demo-1
+  npm start
+
+```
 
  ## Resources 
 
