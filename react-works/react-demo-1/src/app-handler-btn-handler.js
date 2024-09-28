@@ -1,6 +1,14 @@
 import React, { Component } from 'react'
 
 
+// stateless component 
+const Btn = ({ caption, handler }) => (
+    <button className='btn btn-warning' onClick={handler}>{caption}</button>
+);
+
+
+
+
 
 class AppComponentBtnHandler extends Component {
 
@@ -48,6 +56,9 @@ class AppComponentBtnHandler extends Component {
                 <button onClick={() => this.incrementOrDecrement(-1)}
                     className='btn btn-danger'>Decrement</button>
 
+                <hr />
+                <Btn caption="Increment" handler={() => this.incrementOrDecrement(1)} />
+                <Btn caption="Decrement" handler={() => this.incrementOrDecrement(-1)} />
                 <h2>The value of Num : {this.state.num} </h2>
 
             </div>
