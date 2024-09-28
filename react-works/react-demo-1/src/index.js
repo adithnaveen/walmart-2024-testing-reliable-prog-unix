@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import AppHeader from './app-header';
 import AppFooter from './app-footer';
 import AppContent from './app-content';
-
+import EventComponent from './event-component';
 
 class App extends Component {
   render() {
@@ -16,8 +16,18 @@ class App extends Component {
 
     return <div>
       <AppHeader companyName="walmart" city="Bengaluru" />
-      <AppContent location="White Field" />
+
+      <div className="container">
+        <div className="row"><EventComponent /></div>
+        <div className="row"><AppContent location="White Field" /></div>
+      </div>
+
+
+
       <AppFooter {...footerProps} />
+
+
+
 
     </div>;
   }
