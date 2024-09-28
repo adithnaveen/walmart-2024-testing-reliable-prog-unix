@@ -36,7 +36,7 @@ class EmployeeForm extends Component {
 
         switch (name) {
             case 'name':
-                if (!value || name.length === 0) {
+                if (!value || value.length === 0) {
                     formError.name = "Name Required";
                 } else if (value.length < 3 || value.length > 20) {
                     formError.name = "Name should be between 3 to 20 chars"
@@ -45,8 +45,23 @@ class EmployeeForm extends Component {
                 }
                 break;
             case 'email':
+                if (!value || value.length === 0) {
+                    formError.email = "Email Required";
+                } else if (!value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+                    formError.email = "Invalid Email"
+                } else {
+                    formError.email = '';
+                }
                 break;
             case 'contact':
+                if (!value || value.length === 0) {
+                    formError.contact = "Phone Number required";
+                } else if (!value.match(/^\d{10,12}$/)) {
+                    formError.contact = "Invalid Phone Number";
+                } else {
+                    formError.contact = '';
+                }
+
                 break;
             default:
                 console.log("Wrong field...");
@@ -54,6 +69,7 @@ class EmployeeForm extends Component {
         }
 
         this.setState({ [name]: value, formError });
+
     }
 
     render() {
