@@ -18,6 +18,14 @@ class AppComponentBtnHandler extends Component {
         this.setState({ num: this.state.num + 1 })
     }
 
+    decrement = () => {
+        this.setState({ num: this.state.num - 1 })
+    }
+
+    incrementOrDecrement = (val) => {
+        this.setState({ num: this.state.num + val });
+    }
+
     state = {
         num: 0
     }
@@ -31,7 +39,17 @@ class AppComponentBtnHandler extends Component {
                     className="btn btn-primary">Button Handler</button>
                 <hr />
                 <button onClick={this.increment} className='btn btn-success'>Increment</button>
+                <button onClick={this.decrement} className='btn btn-success'>Decrement</button>
+                <hr />
+
+                <button onClick={() => this.incrementOrDecrement(1)}
+                    className='btn btn-danger'>Increment</button>
+
+                <button onClick={() => this.incrementOrDecrement(-1)}
+                    className='btn btn-danger'>Decrement</button>
+
                 <h2>The value of Num : {this.state.num} </h2>
+
             </div>
         );
     }
