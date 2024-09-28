@@ -19,10 +19,41 @@ class EmployeeForm extends Component {
 
     tfHandler = (evt) => {
         // console.log(evt.target);
-        let name = evt.target.name;
-        let value = evt.target.value;
+        // let name = evt.target.name;
+        // let value = evt.target.value;
 
-        console.log(name, value);
+        // console.log(name, value);
+
+        // let modifiedState = {};
+        // modifiedState[name] = value;
+        // console.log("modified state ", modifiedState);
+        // this.setState(modifiedState);
+
+
+        let { name, value } = evt.target;
+        this.setState({ [name]: value });
+        let { formError } = this.state;
+
+        switch (name) {
+            case 'name':
+                if (!value || name.length === 0) {
+                    formError.name = "Name Required";
+                } else if (value.length < 3 || value.length > 20) {
+                    formError.name = "Name should be between 3 to 20 chars"
+                } else {
+                    formError.name = '';
+                }
+                break;
+            case 'email':
+                break;
+            case 'contact':
+                break;
+            default:
+                console.log("Wrong field...");
+                break;
+        }
+
+        this.setState({ [name]: value, formError });
     }
 
     render() {
