@@ -787,6 +787,109 @@ We suggest that you begin by typing:
 
 ```
 
+- understand concepts first 
+- yesterday program is was too much -like export 
+```
+business-logic.js - Diwya 
+    let func = (a) => a + a
+    let obj = {}
+    let x = 0
+
+
+--------------------------
+
+app-development.js - sudarshan 
+import func from './business-logic.js' 
+
+let mymaths = (num) => func(num); 
+
+
+```
+- why you are trying to do in index.js 
+- why are you giving in ./ 
+- why app-header,app-footer, why app-content etc why 
+
+```
+
+    int maths (int num1, int num2, String opr) {
+        if(opr.equals("add")) {
+            return num1 + num2; 
+        }else if(ops.equals("sub")) {
+            return num1 - num2;
+        }.......
+    }
+
+    - is more of cohesive  
+    int add(num1, num2) {
+        return num1 + num2; 
+    }
+
+    int sub(num1, num2) {
+        return num1 - num2; 
+    }
+
+
+
+    // implementing reactjs application without cohesiveness 
+
+
+
+    import React, {Component} from 'react'; 
+
+    
+    class App extends Component{
+        constructo() {}
+
+        render() {
+            let company="Walmart";
+            let year = 2024; 
+            let website="http://walmart.com";
+
+            <div>
+                <div className="app-header">
+                        <h1>{company}</h1>
+                </div>
+                <div className="app-content">
+                    <h2>This is content page 
+                </div>
+                <div className="app-footer">
+                    <p> this is footer {year} wesite is {website}
+                </div>
+
+            </div>
+        }
+    }
+
+
+```
+
+
+- doing assignment is difficult 
+
+# 28-sep-2024 
+
+- Handling - bind function 
+```
+    <div>
+        <h1></h1>
+    </div>
+
+    <Fragment>
+        <h1></h1>
+    <Fragment/>
+```
+- event handler with  stateful (class) component + stateless (function) component 
+- create the form using uncontrolled way (old)
+- form with controlled component 
+- form validation 
+- working with arrays
+- fetch data from external api and show in react component 
+- React with Redux 
+- react Hooks 
+
+
+
+
  ## Resources 
 
 - https://www.w3.org/WAI/WCAG2AAA-Conformance
