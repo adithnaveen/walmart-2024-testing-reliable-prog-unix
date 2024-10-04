@@ -882,11 +882,31 @@ let mymaths = (num) => func(num);
 - create the form using uncontrolled way (old)
 - form with controlled component 
 - form validation 
+- life cycle function 
+
+# 04-oct-2024 
+
+```
+    - life cycel 
+
+- MyComponent - will have the properites of Component class 
+    class MyComponent extends React.Component  {
+
+        constructor() {
+            super();
+        }
+        // lifecycle 
+    }
+```
 - working with arrays
 - fetch data from external api and show in react component 
+- HOC 
 - React with Redux 
+- Routing 
+- Lazy Loading 
+- Error handling 
 - react Hooks 
-
+- react hooks + retrieving data 
 
 
 

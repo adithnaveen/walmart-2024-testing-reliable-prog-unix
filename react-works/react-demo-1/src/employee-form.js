@@ -4,6 +4,22 @@ import React, { Component } from 'react'
 
 class EmployeeForm extends Component {
 
+    constructor() {
+        super();
+        console.log("Constructor mouted...");
+    }
+
+    static getDerivedStateFromProps(props, state) {
+        console.log("props : ", props);
+        console.log("Sate : ", state);
+
+        return state;
+    }
+
+    componentDidMount() {
+        console.log("componentDidMount()  called after render... ");
+        // this is good place to call external API 
+    }
 
     state = {
         name: '',
@@ -73,9 +89,10 @@ class EmployeeForm extends Component {
     }
 
     render() {
+        console.log("Rednder is called... ");
         return (
             <div className='container'>
-                <h3 className='alert alert-success'>Employee Form (Controleld Component) </h3>
+                <h3 className='alert alert-success'>Employee Form (Controlled Component) </h3>
                 <form className='form'>
 
                     <div className="form-group row">
