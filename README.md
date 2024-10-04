@@ -860,6 +860,7 @@ let mymaths = (num) => func(num);
         }
     }
 
+- http://somesite.com/api/customers - GET 
 
 ```
 
