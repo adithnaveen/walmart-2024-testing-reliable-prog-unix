@@ -6,14 +6,16 @@ import { createStore, applyMiddleware } from 'redux';
 import rootReducer from './reducers/root-reducer';
 
 // this should not be inproduction 
-import { composeWithDevTools } from 'redux-devtools-extension';
+// import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 
 import { Provider } from 'react-redux';
-import ContactForm from './component/ContactForm';
-import ContactsList from './component/ContactList';
+import ContactForm from './components/ContactForm';
+import ContactsList from './components/ContactList';
 
-let store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
+
+
+let store = createStore(rootReducer, applyMiddleware(thunk));
 
 class App extends Component {
 

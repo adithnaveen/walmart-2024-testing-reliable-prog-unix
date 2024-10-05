@@ -1,4 +1,4 @@
-import { FETCH_CONTACTS } from "../types/constants";
+import { FETCH_CONTACTS, ADD_CONTACT, FETCH_CONTACT, DELETE_CONTACT } from "../types/constants";
 
 const url = "http://localhost:4000/contact";
 
