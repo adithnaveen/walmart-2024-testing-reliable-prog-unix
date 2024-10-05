@@ -1,29 +1,32 @@
-import { deleteContact } from '../actions/contacts-action';
+import React, { Component } from 'react'
 import { connect } from 'react-redux';
+import { fetchContacts } from '../actions/contacts-action';
+import ContactCard from './ContactCard'
 
-const ContactCard = ({ contact, removeContact }) => (
-    <div className="card">
-        <div className="row">
+class ContactsList extends Component {
 
-            <div className="col-md-4">
-                <img src={contact.pic} alt={contact.first_name} className="card-img"
-                    style={{ width: "120px", height: "120px" }} />
+    componentDidMount() {
+        this.props.getContacts();
+    }
+
+    render() {
+        let list = null;
+        let { contacts } = this.props;
+        if (contacts instanceof Array && contacts.length > 0) {
+            list = contacts.map(c => <ContactCard contact={c} key={c.id} />)
+        }
+        return (
+            <div className="container">
+                <h3>Contact List</h3>
+                {list}
             </div>
-            <div className="col-md-8">
-                <div className="card-body">
-                    <h4 className="card-title">{contact.gender === 'Male' ? "Mr. " : "Ms/Mrs. "}{contact.first_name}
-                        <button className="btn btn-danger"
-                            onClick={() => {
-                                removeContact(contact.id)
-                            }}
-                        >X</button>
-                    </h4>
-                    <h4 className="card-text">{contact.email}</h4>
-                    <h4 className="card-text">{contact.phone}</h4>
-                </div>
-            </div>
-
-        </div>
-    </div>
-)
-export default connect(null, { removeContact: deleteContact })(ContactCard); 
+        );
+    }
+}
+let mapStateToProps = (reducer) => {
+    return {
+        contacts: reducer.contactsReducer.contacts
+    }
+};
+let mapDispatchToProps = { getContacts: fetchContacts }
+export default connect(mapStateToProps, mapDispatchToProps)(ContactsList);
