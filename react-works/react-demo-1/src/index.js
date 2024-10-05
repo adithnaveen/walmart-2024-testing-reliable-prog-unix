@@ -32,6 +32,7 @@ class App extends Component {
             picture: "https://randomuser.me/api/portraits/men/1.jpg"
         };
 
+        // working with arrays 
 
         console.log(this.state.contacts);
 

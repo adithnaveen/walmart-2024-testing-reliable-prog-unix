@@ -902,7 +902,36 @@ let mymaths = (num) => func(num);
 - working with arrays
 - fetch data from external api and show in react component 
 - HOC 
+
+# 05-oct-2024 
+
+```
+- regular style = 
+let contacs = new Array(6);
+contacs.map(function(c){
+    return <ContactCard contact={c} key={c.id} />
+})
+
+- json-server --watch data.json 
+- npm i json-server -> this will make an enty in package .json 
+- npm num rest-server 
+
+- arrow style    contacts.map(c => <ContactCard contact={c} key={c.id} />)
+```
+
+
 - React with Redux 
+```
+    - data store will be in store 
+    - action 
+        - let action = {type:'INSERT', payload:"{name:'naveen', email:'naveen@gmail.com}"}
+        - let action = {type:'FETCH'}
+        - let action = {type:'UPDATE', payload:{id:101, name:'naveen kumar'}}
+        store.dispatch(action); 
+
+        - npm i bootstrap redux react-redux redux-devtools-extension redux-thunk json-server
+        - npm i --force bootstrap redux react-redux redux-devtools-extension redux-thunk json-server
+```
 - Routing 
 - Lazy Loading 
 - Error handling 
@@ -918,5 +947,5 @@ let mymaths = (num) => func(num);
 - https://github.com/settings/tokens
 - https://www.graalvm.org/latest/getting-started/ - graal vm tutorial getting started
 - https://compat-table.github.io/compat-table/es6/ 
-
+- https://redux.js.org/tutorials/fundamentals/part-2-concepts-data-flow#reducers - redux flow 
 
