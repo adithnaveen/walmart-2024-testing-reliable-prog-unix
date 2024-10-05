@@ -30,6 +30,7 @@ export const addContact = (contact) => async (dispatch) => {
 }
 
 
+// localhost:4000/contact/123 - DELETE - open api 3.0 
 export const deleteContact = (id) => async (dispatch) => {
     await fetch(url + id, { method: 'DELETE' });
     dispatch({ type: DELETE_CONTACT, data: id });
