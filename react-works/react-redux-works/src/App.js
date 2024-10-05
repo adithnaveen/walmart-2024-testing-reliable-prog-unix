@@ -7,7 +7,7 @@ import rootReducer from './reducers/root-reducer';
 
 // this should not be inproduction 
 // import { composeWithDevTools } from 'redux-devtools-extension';
-import thunk from 'redux-thunk';
+import { thunk } from 'redux-thunk';
 
 import { Provider } from 'react-redux';
 import ContactForm from './components/ContactForm';
