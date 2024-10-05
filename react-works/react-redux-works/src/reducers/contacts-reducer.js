@@ -28,7 +28,6 @@ export default (state = { contacts: [] }, action) => {
             return { ...state, contact: action.data };
 
         case FETCH_CONTACTS:
-
             return { ...state, contacts: action.data };
         default:
             return { ...state };
