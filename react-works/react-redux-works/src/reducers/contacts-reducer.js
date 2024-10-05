@@ -9,21 +9,27 @@ export default (state = { contacts: [] }, action) => {
         case ADD_CONTACT:
             {
                 let contacts = [...state.contacts];
-            contacts.push(action.data);
-            return { ...state, contacts }
-        }
+                contacts.push(action.data);
+                return { ...state, contacts }
+            }
 
         case DELETE_CONTACT:
 
-            break;
+            {
+                let contacts = [...state.contacts];
+                let index = contacts.findIndex(c => c.id === action.data);
+                if (index != 1) {
+                    contacts.splice(index, 1);
+                }
+                return { ...state, contacts };
+            }
 
         case FETCH_CONTACT:
-
-            break;
+            return { ...state, contact: action.data };
 
         case FETCH_CONTACTS:
 
-            break;
+            return { ...state, contacts: action.data };
         default:
             return { ...state };
     }
