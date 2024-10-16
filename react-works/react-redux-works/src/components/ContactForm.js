@@ -7,7 +7,7 @@ class ContactForm extends Component {
         name: '',
         email: '',
         phone: '',
-        picture: '',
+        pic: '',
         formErrors: {
             name: 'Name is required',
             email: 'Email is required',
@@ -75,8 +75,9 @@ class ContactForm extends Component {
         this.setState({ errorMessages })
 
         if (this.validateForm(this.state.formErrors)) {
-            let { first_name: name, email, phone, picture } = this.state;
-            let contact = { name, email, phone, picture };
+            let { name, email, phone, pic } = this.state;
+            let contact = { first_name: name, email, phone, pic };
+            console.log(contact);
             this.props.addContact(contact);
             alert("Record saved...");
 
@@ -110,9 +111,9 @@ class ContactForm extends Component {
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label htmlFor="picture" className="control-label col-md-4">URL</label>
+                        <label htmlFor="pic" className="control-label col-md-4">URL</label>
                         <div className="col-md-8">
-                            <input value={this.state.picture} onChange={this.tfHandler} type="text" className="form-control" name="picture" />
+                            <input value={this.state.pic} onChange={this.tfHandler} type="text" className="form-control" name="pic" />
                         </div>
                     </div>
                     <button className="btn btn-primary" id="submitBtn">Add to list</button>
