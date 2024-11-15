@@ -940,6 +940,184 @@ contacs.map(function(c){
 
 
 
+
+
+
+
+
+# 15-Nov-2024 
+
+## Data Model 
+
+
+1. Customer 
+```
+    {
+        _id:<12 digit>, 
+        email: string, -- max +1 + createa uniq index , 
+        password: String, -- bcrypt or MD5 etc... 
+        firstName:String, 
+        lastName:String, 
+        customerId: Integer, 
+        address: {
+            houseno, street, city, pin, state, country.... 
+        }, 
+        active: boolean,   -- by default he value is false, wil be set to true only when email validation is completed
+    }
+
+```
+
+2. CreditCard 
+```
+    email: string, -- max +1 + createa uniq index , 
+    $ref: customer.email,           -- pls follow one of the way 
+    creditcards: [
+            {
+                creditCardId: Integer, 
+                creditCardNumber: Integer (16 Digit) - validation to be on service layer of application and UI, 
+                expiryMonth: Integer, 
+                expiryYear : Integer, 
+                nameOnTheCard: String, 
+                wireTransactionVendor: String (visa/mastercard/rupay... ), 
+                status: String -  disabled, 
+            }, 
+             {
+                creditCardId: Integer, 
+                creditCardNumber: Integer (16 Digit) - validation to be on service layer of application and UI, 
+                expiryMonth: Integer, 
+                expiryYear : Integer, 
+                nameOnTheCard: String, 
+                wireTransactionVendor: String (visa/mastercard/rupay... ), 
+                status: String - enabled
+            }
+        ]
+```
+
+
+3. Transaction
+
+```
+{
+    [
+        creditCardId: Integer, 
+        transactions: [
+                {
+                    transactionId: Integer, 
+                    transactionDate: Date, 
+                    transactionTime: Time, 
+                    transactionType: String - db/cr, 
+                    transactionAmount: decimal, 
+                    ..... 
+                }, 
+                    {
+                    transactionId: Integer, 
+                    transactionDate: Date, 
+                    transactionTime: Time, 
+                    transactionType: String - db/cr, 
+                    transactionAmount: decimal, 
+                    ..... 
+                },
+                    {
+                    transactionId: Integer, 
+                    transactionDate: Date, 
+                    transactionTime: Time, 
+                    transactionType: String - db/cr, 
+                    transactionAmount: decimal, 
+                    ..... 
+                },
+                    {
+                    transactionId: Integer, 
+                    transactionDate: Date, 
+                    transactionTime: Time, 
+                    transactionType: String - db/cr, 
+                    transactionAmount: decimal, 
+                    ..... 
+                }
+            ]
+       ], 
+        [
+        creditCardId: Integer, 
+        transactions: [
+                {
+                    transactionId: Integer, 
+                    transactionDate: Date, 
+                    transactionTime: Time, 
+                    transactionType: String - db/cr, 
+                    transactionAmount: decimal, 
+                    ..... 
+                }, 
+                    {
+                    transactionId: Integer, 
+                    transactionDate: Date, 
+                    transactionTime: Time, 
+                    transactionType: String - db/cr, 
+                    transactionAmount: decimal, 
+                    ..... 
+                },
+                    {
+                    transactionId: Integer, 
+                    transactionDate: Date, 
+                    transactionTime: Time, 
+                    transactionType: String - db/cr, 
+                    transactionAmount: decimal, 
+                    ..... 
+                },
+                    {
+                    transactionId: Integer, 
+                    transactionDate: Date, 
+                    transactionTime: Time, 
+                    transactionType: String - db/cr, 
+                    transactionAmount: decimal, 
+                    ..... 
+                }
+            ]
+       ]
+    }
+            
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ {
+        _id:<12 digit>, 
+        email: string,  
+        password: String, 
+        firstName:String, 
+        lastName:String, 
+        customerId: Integer, 
+        address: {
+            houseno:Integer, 
+            street:String, 
+            city:String, 
+            pin:integer, 
+            state:String, 
+            country:String 
+        }, 
+        active: boolean,   
+    }
+
+
+
+
+
+
+
+
+
+
+
+
  ## Resources 
 
 - https://www.w3.org/WAI/WCAG2AAA-Conformance
